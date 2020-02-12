@@ -14,7 +14,7 @@ public class GoogleTest {
         Selenide.open("http://google.com");
         Selenide.$(By.xpath("//input[@name='q']")).setValue("Hello world").pressEnter();
 
-        Selenide.$(By.partialLinkText("wikip22edia")).shouldHave(text("Hello world!"));
+        Selenide.$(By.partialLinkText("wikipedia")).shouldHave(text("Hello world!"));
     }
 
 
